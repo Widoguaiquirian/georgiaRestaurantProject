@@ -149,12 +149,20 @@
          font-family: $font-nunito;
          font-size: 5rem;
          @include textStyles(capitalize);
+
+         @media (max-width: 600px) {
+            font-size: 2rem;
+         }
       }
 
       &-paragraph {
          font-family: $font-josefinSans;
          font-size: 3rem;
          margin: 1rem 0;
+
+         @media (max-width: 600px) {
+            font-size: 1rem;
+         }
       }
 
       &-btn {
@@ -172,6 +180,12 @@
          border-radius: 25px;
          cursor: pointer;
          border: 1px solid $color-primary;
+
+         @media (max-width: 600px) {
+            width: 10rem;
+            height: 2rem;
+            font-size: 1rem;
+         }
       }
    }
 
